@@ -3,7 +3,8 @@ import { connect } from "react-redux";
 import { decCount, incCount } from "./store/actionCreators";
 function Counter(props) {
   console.log("counter rendered")
-  // console.log(props);
+  // console.log(props)
+  console.log(props);
 
   return (
     <div className="m-2 p-2">
@@ -30,3 +31,4 @@ function Counter(props) {
 export default connect((store) => {
   return store.counterReducer;
 })(Counter);
+
