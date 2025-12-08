@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 function Counter(props) {
+  console.log("Counter rendered");
   console.log(props);
   return (
     <div className="m-2 p-2">
@@ -27,3 +28,4 @@ function Counter(props) {
 export default connect((store) => {
   return store.counterReducer;
 })(Counter);
+
