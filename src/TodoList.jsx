@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 function TodoList(props) {
   let [newtodo, setnewtodo] = useState("");
-  console.log("Counter rendered")
+  console.log("TodoList rendered")
   return (
     <div className="ml-2">
       <h2>TodoList :</h2>
@@ -36,4 +36,5 @@ function TodoList(props) {
 export default connect((store) => {
   return store.todoReducer;
 })(TodoList);
+
 
